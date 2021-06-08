@@ -1,0 +1,36 @@
+Egy pont lehet:
+- üres (0)
+- Hajó (X)
+- Találat (H)
+- Elsűlyedt (S)
+- Mellé (M)
+
+Print_board működése:
+i) Placement phase:
+- egy táblát mutat
+- mutatja a hajókat (X)
+
+ii) Shooting phase:
+- mindkét táblát mutatja
+- nem mutatja a hajókat (X), hanem üres pozíciót (0) mutat helyettük
+
+Találat esetén:
+Ellenőrizni kell, hogy a hajó elsűlyedt-e, vagy csak találatot kapott. Ezt hogy oldjuk meg? Ha max. 2-es hajókat engedünk, akkor esetleg a szomszédos pozíciók ellenőrzésével (van-e X) megtehető. Ha már 3-as hajó is van, akkor ez így nem működik.
+
+
+Függvények:
+
+def init_board(n):
+	return board
+
+def print_board(board1, board2, mode):
+	# mode 1: ha csak board1 és mutat X-et, 2: ha csak board2 és mutat X-et, 0(default): ha mindkét board látszódik és 0-t ír ki X helyett
+	return None
+
+def place_ships(board, player):
+	# meghívja a print_board(board1, board2, player)-t
+	return board
+	
+def game_logic(n, ...):
+	# először meg lehet csinálni egyetlen paraméterrel, aztán, ha fejlesztünk hozzá single player mode-ot, akkor adunk neki még
+	return None
